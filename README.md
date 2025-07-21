@@ -23,7 +23,7 @@ A simple, clean and personal **habit tracking app** built with [Streamlit] and [
 This app uses a local **SQLite database** (`habits.db`) to store all habit logs and user data.
 
 - When running **locally**, your data is stored permanently in the file system.
-- When deployed on **Streamlit Cloud** and run it using the link above, the database file is temporary and may be:
+- When deployed on **Streamlit Cloud** and run it using the link above https://habittracker-cptxusg3qrljqdq5gp7hct.streamlit.app/ , the database file is temporary and may be:
   - **Reset** after app updates or long inactivity,
   - **Deleted** on server restarts.
  
@@ -31,16 +31,30 @@ This app uses a local **SQLite database** (`habits.db`) to store all habit logs 
 
  1. Make sure you have Python installed. You need Python 3.7 or higher.
  2. Clone or download the GitHub repo
-    - If you have Git installed, clone the repo by running in your terminal: git clone https://github.com/AntigoniD/habit_tracker.git
+    - If you have Git installed, clone the repo by running in your terminal:
+      ```bash
+      git clone https://github.com/AntigoniD/habit_tracker.git
+      ```
     - Or, you can download the repo as a ZIP file from GitHub and extract it.
- 3. Navigate to the project folder, by running to your terminal: cd habit_tracker
- 4. (Optional) Create and activate a virtual environment
+ 3. Navigate to the project folder, by running to your terminal:
+     ```bash
+     cd habit_tracker
+     ```
+ 4. (Optional) Create and activate a virtual environment.
      It's a good practice to isolate dependencies.
-      On Windows:
-      python -m venv venv
-      venv\Scripts\activate
- 5. Install required packages: pip install -r requirements.txt
- 6. Run the app: streamlit run app.py
+     **On Windows:**
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate
+    ````
+ 5. Install required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
+ 6. Run the app:
+    ```bash
+    streamlit run app.py
+    ```
  7. Open the app in your browser. Usually at http://localhost:8501
 
 
